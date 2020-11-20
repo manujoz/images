@@ -17,11 +17,11 @@ $ composer require manujoz/imagenes
 ```php
 <?php
 
-use Manujoz\Imagenes\Imagenes;
+use Manujoz\Images\Images;
 
 require( "vendor/autoload.php" );
 
-$IMGS = new Imagenes();
+$IMGS = new Images();
 $response = $IMGS->copy( $_FILES[ "img" ], "/img/path/folder" );
 
 echo $response[ "copy" ] . "<br>";
