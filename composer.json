@@ -1,8 +1,8 @@
 {
-	"name": "manujoz/imagenes",
+	"name": "manujoz/images",
 	"type": "library",
 	"description": "Class to upload images to the server",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"require": {
         "php": ">=5.5.0"
 	},
