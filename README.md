@@ -5,7 +5,7 @@ Images is a class to upload images to the server in a simple and completely conf
 ## Install
 
 ```
-$ composer require manujoz/imagenes
+$ composer require manujoz/images
 ```
 
 ## Use
