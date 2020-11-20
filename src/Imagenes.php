@@ -1,6 +1,6 @@
-<?php namespace Utilidades;
+<?php namespace Manujoz\Images;
 
-class Imagenes {
+class Images {
 	private $width;
 	private $height;
 	private $cover;
