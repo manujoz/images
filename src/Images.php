@@ -201,20 +201,23 @@ class Images {
 	 */
 	private function _create_dirs( $path ) {
 		// Remove the first slash to the route
-		if( $path[ 0 ] == "/" ) {
-			$path = substr( $path, 1 );
-		}
+        if ($path[0] == "/") {
+            $path = substr($path, 1);
+        }
 
-		// We separate the route by slash and we travel it
-		$sRuta = explode( "/", $path );
-		$ruRide = "";
-		foreach( $sRuta as $ru ) {
-			$ruRide .= ( !$ruRide ) ? $_SERVER[ "DOCUMENT_ROOT" ] . $ru : "/" . $ru;
+        // Creamos el documentRoot
+        $documentRoot = substr($_SERVER["DOCUMENT_ROOT"], -1) !== "/" ? $_SERVER["DOCUMENT_ROOT"] . "/" : $_SERVER["DOCUMENT_ROOT"];
 
-			if( !file_exists( $ruRide )) {
-				mkdir( $ruRide, 0777, true );
-			}
-		}
+        // We separate the route by slash and we travel it
+        $sRuta = explode("/", $path);
+        $ruRide = "";
+        foreach ($sRuta as $ru) {
+            $ruRide .= !$ruRide ? $documentRoot . $ru : "/" . $ru;
+
+            if (!file_exists($ruRide)) {
+                mkdir($ruRide, 0777, true);
+            }
+        }
 	}
 
 	/**
