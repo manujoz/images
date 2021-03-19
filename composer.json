@@ -1,23 +1,23 @@
 {
-	"name": "manujoz/images",
-	"type": "library",
-	"description": "Class to upload images to the server",
-	"version": "1.0.5",
-	"require": {
-        "php": ">=5.5.0"
-	},
-	"homepage": "https://github.com/manujoz/imagenes.git",
-	"authors": [
-		{
-			"name": "Manu Overa",
-			"email": "manu.giralda@gmail.com",
-			"role": "Developer"
-		}
-	],
-	"autoload": {
-        "psr-4": {
-            "Manujoz\\Images\\": "src/"
-        }
-	},
-	"license": "MIT"
+  "name": "manujoz/images",
+  "type": "library",
+  "description": "Class to upload images to the server",
+  "version": "1.0.6",
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "homepage": "https://github.com/manujoz/imagenes.git",
+  "authors": [
+    {
+      "name": "Manu Overa",
+      "email": "manu.giralda@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Manujoz\\Images\\": "src/"
+    }
+  },
+  "license": "MIT"
 }
