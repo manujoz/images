@@ -4,9 +4,9 @@ namespace Manujoz\Images;
 
 class ImageResponse
 {
-    public bool $copy;
-    public string $extension;
-    public string $name;
-    public string $path;
-    public string $url;
+    public bool $copy = false;
+    public ?string $extension = null;
+    public ?string $name = null;
+    public ?string $path = null;
+    public ?string $url = null;
 }
